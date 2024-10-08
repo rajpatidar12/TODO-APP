@@ -1,0 +1,95 @@
+:root {
+  --body-background: #f4f4f9;
+  --btn-primary: #5cabff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--body-background);
+}
+
+.container {
+  background-color: white;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+#todoInput {
+  width: 75%;
+  padding: 10px;
+  margin-right: 10px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+}
+
+#addTodo {
+  padding: 10px 20px;
+  background-color: var(--btn-primary);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+#addTodo:hover {
+  background-color: #4a99e5; /* Darker shade on hover */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+li:hover {
+  background-color: aliceblue;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+.completeBtn {
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-right: 5px; /* Reduced space */
+}
+
+.completeBtn:hover {
+  background-color: darkgreen; /* Darker shade on hover */
+}
+
+.completeBtn:disabled {
+  background-color: grey;
+}
+
+.deleteBtn {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.deleteBtn:hover {
+  background-color: darkred; /* Darker shade on hover */
+}
